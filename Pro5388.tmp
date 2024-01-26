@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://374nj6sb1x1h"]
+
+[ext_resource type="PackedScene" uid="uid://cebhgwj38jilj" path="res://Player.tscn" id="1_dgvkt"]
+[ext_resource type="PackedScene" uid="uid://dar5734lrmcmh" path="res://beat.tscn" id="2_p454q"]
+
+[node name="Prototype" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_dgvkt")]
+position = Vector2(94, -23)
+
+[node name="Beat" parent="." instance=ExtResource("2_p454q")]

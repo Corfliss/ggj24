@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxkck1hls7v0e"]
+
+[ext_resource type="Texture2D" uid="uid://ble2mu0kjsg5v" path="res://Sprites/icon.svg" id="1_kofgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8yphf"]
+size = Vector2(129, 130)
+
+[node name="GodotIcon" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_8yphf")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("1_kofgb")

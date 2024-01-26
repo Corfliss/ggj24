@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://dar5734lrmcmh"]
+
+[ext_resource type="Script" path="res://music_player.gd" id="1_rrsia"]
+[ext_resource type="AudioStream" uid="uid://cn3mvv7rftbo0" path="res://Venus.wav" id="2_6kvgx"]
+[ext_resource type="Script" path="res://Spawner2D.gd" id="3_yh54a"]
+[ext_resource type="PackedScene" uid="uid://dxkck1hls7v0e" path="res://godot_icon.tscn" id="4_ken5p"]
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_uxa44"]
+
+[node name="Beat" type="Node2D"]
+script = ExtResource("1_rrsia")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6kvgx")
+
+[node name="Spawner2D" type="Marker2D" parent="."]
+script = ExtResource("3_yh54a")
+
+[node name="GodotIcon" parent="Spawner2D" instance=ExtResource("4_ken5p")]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+modification_stack = SubResource("SkeletonModificationStack2D_uxa44")
