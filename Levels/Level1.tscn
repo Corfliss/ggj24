@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bigr6ktrqcr17"]
+
+[ext_resource type="PackedScene" uid="uid://cebhgwj38jilj" path="res://Prefabs/Player.tscn" id="1_diinx"]
+[ext_resource type="PackedScene" uid="uid://cb6mhi2t2doqi" path="res://Prefabs/Platform.tscn" id="2_ai3qf"]
+[ext_resource type="PackedScene" uid="uid://87q8li4mp586" path="res://Utilities/audio_stream_player_2d.tscn" id="3_52ifx"]
+[ext_resource type="Script" path="res://Scripts/PrintDebug.gd" id="4_b2fhf"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_diinx")]
+position = Vector2(519, 301)
+
+[node name="Platform" parent="." instance=ExtResource("2_ai3qf")]
+position = Vector2(520, 352)
+scale = Vector2(10, 1)
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("3_52ifx")]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("4_b2fhf")
+
+[connection signal="beats" from="AudioStreamPlayer2D" to="Node2D" method="_on_audio_stream_player_2d_beats"]
+[connection signal="measurement" from="AudioStreamPlayer2D" to="Node2D" method="_on_audio_stream_player_2d_measurement"]
