@@ -1,23 +1,48 @@
-[gd_scene load_steps=5 format=3 uid="uid://bigr6ktrqcr17"]
+[gd_scene load_steps=8 format=3 uid="uid://bigr6ktrqcr17"]
 
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_akfke"]
 [ext_resource type="PackedScene" uid="uid://cebhgwj38jilj" path="res://Prefabs/Player.tscn" id="1_diinx"]
-[ext_resource type="PackedScene" uid="uid://cb6mhi2t2doqi" path="res://Prefabs/Platform.tscn" id="2_ai3qf"]
 [ext_resource type="PackedScene" uid="uid://87q8li4mp586" path="res://Utilities/audio_stream_player_2d.tscn" id="3_52ifx"]
-[ext_resource type="Script" path="res://Scripts/PrintDebug.gd" id="4_b2fhf"]
+[ext_resource type="Texture2D" uid="uid://eo47nsvpmlb2" path="res://Sprites/Lab_BG.png" id="5_477xp"]
+[ext_resource type="Script" path="res://Scripts/Ground.gd" id="5_dtgnt"]
+[ext_resource type="PackedScene" uid="uid://c8dwaw7826csi" path="res://Prefabs/Ground.tscn" id="5_fp3ql"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etb3f"]
+size = Vector2(100, 20)
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_akfke")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_diinx")]
-position = Vector2(519, 301)
+position = Vector2(314, 916.3)
 
-[node name="Platform" parent="." instance=ExtResource("2_ai3qf")]
-position = Vector2(520, 352)
-scale = Vector2(10, 1)
+[node name="Conductor" parent="CharacterBody2D" instance=ExtResource("3_52ifx")]
 
-[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("3_52ifx")]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
 
-[node name="Node2D" type="Node2D" parent="."]
-script = ExtResource("4_b2fhf")
+[node name="HighGround" parent="." instance=ExtResource("5_fp3ql")]
+position = Vector2(314, 490)
+script = ExtResource("5_dtgnt")
 
-[connection signal="beats" from="AudioStreamPlayer2D" to="Node2D" method="_on_audio_stream_player_2d_beats"]
-[connection signal="measurement" from="AudioStreamPlayer2D" to="Node2D" method="_on_audio_stream_player_2d_measurement"]
+[node name="MiddleGround" parent="." instance=ExtResource("5_fp3ql")]
+position = Vector2(314, 750)
+script = ExtResource("5_dtgnt")
+
+[node name="LowerGround" type="StaticBody2D" parent="."]
+position = Vector2(315, 1040)
+script = ExtResource("5_dtgnt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerGround"]
+shape = SubResource("RectangleShape2D_etb3f")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(11062, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(2, 0)
+scale = Vector2(1.513, 1.513)
+texture = ExtResource("5_477xp")
+centered = false

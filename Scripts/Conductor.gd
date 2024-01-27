@@ -3,8 +3,8 @@
 
 extends AudioStreamPlayer2D
 
-@export var bpm = 120
-@export var measures = 4
+var bpm = Global.bpm
+var measures = 4
 
 # Tracking the beat data and song position
 var song_position = 0.0
@@ -22,15 +22,16 @@ var time_off_beat = 0.0
 signal beats(position)
 signal measurement(position)
 
-func _ready():
-	play()
-
 # The main process
 func _physics_process(_delta):
-	# If the play state is true
 	if playing:
-		
-		# Get the song position according to the playback position and time since last mix
+		audio_update()
+	if not playing:
+		play()
+		audio_update()
+
+func audio_update():
+	# Get the song position according to the playback position and time since last mix
 		song_position = get_playback_position() + AudioServer.get_time_since_last_mix()
 		
 		# Compensate for output latency
@@ -41,8 +42,7 @@ func _physics_process(_delta):
 		
 		# Report the beat processing with a private function
 		_report_beat()
-	
-#
+
 # The function to report beat to give information
 func _report_beat():
 	
@@ -70,21 +70,34 @@ func play_with_beat_offset(num):
 	beats_before_start = num
 	
 	# Make a timer according to the beat offset
-	$StartTimer.wait_time = sec_per_beat
-	$StartTimer.start()
+	#$StartTimer.wait_time = sec_per_beat
+	#$StartTimer.start()
 
 # Not sure how this is going to be used in the game
-func closest_beat(nth):
+# But I reckon this is for detecting the closest beat
+func closest_beat():
 
-	# Get the integer of the closest
-	closest = int(round((song_position / sec_per_beat) / nth) * nth)
+	# Get the integer of the closest beat
+	closest = round(song_position / sec_per_beat)
 	
 	# Get the time off beat
 	time_off_beat = abs(closest * sec_per_beat - song_position)
-
-	# Return... Wait, why there is a Vector2 here?
+	
+	# Return both as Vector2
 	return Vector2(closest, time_off_beat)
-#
+	
+	# For debugging purpose:
+	#print("----------------------")
+	#print("time_off_beat: ", time_off_beat)
+	#print("song_position: ", song_position)
+	#print("sec_per_beat: ", sec_per_beat)
+	#print("closest_beat: ", closest_beat)
+	#print("song_position_in_beats: ", song_position_in_beats)
+	#print("last_reported_beat: ", last_reported_beat)
+	#print("beats_before_start: ", beats_before_start)
+	#print("measure: ", measure)
+	#print("----------------------")
+
 func play_from_beat(beat, offset):
 	# Play the msuic
 	play()
@@ -98,7 +111,9 @@ func play_from_beat(beat, offset):
 	# Get the measure
 	measure = beat % measures
 
+# Signal from StartTimer timeout
 func _on_start_timer_timeout():
+	
 	# Increment the song position in beats
 	song_position_in_beats += 1
 	
