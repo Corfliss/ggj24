@@ -1,11 +1,11 @@
 extends Node
 
-@export var bpm : float = 144
+@export var bpm = [100, 130, 150, 170, 190]
 @export var tolerance_ms : float = 100
 var tolerance_seconds : float = float(tolerance_ms / 1000)
 var beat_offset = 8
-var camera_offset = 500
-
+var camera_offset = 400
+var health = 100
 
 #func set_difficulty(difficulty):
 	#if difficulty == "easy":

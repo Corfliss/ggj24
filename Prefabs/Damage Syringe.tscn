@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqjl20cp7sdl2"]
+
+[ext_resource type="Texture2D" uid="uid://bg0n5rfyf3je5" path="res://Sprites/Syringe_Purple_Damage.png" id="1_6o61s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jdrau"]
+radius = 77.37
+height = 1024.0
+
+[node name="DamageSyringe" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_jdrau")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-36, -12)
+rotation = -2.35619
+scale = Vector2(1, 1)
+texture = ExtResource("1_6o61s")

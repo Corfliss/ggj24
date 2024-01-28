@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://duhucf4eibwwo"]
+
+[ext_resource type="PackedScene" uid="uid://e4r34d8vlhjp" path="res://Prefabs/PitCol.tscn" id="1_gfh66"]
+
+[node name="Pit" type="Area2D"]
+
+[node name="CollisionShape2D" parent="." instance=ExtResource("1_gfh66")]

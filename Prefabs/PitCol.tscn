@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://e4r34d8vlhjp"]
+
+[ext_resource type="Texture2D" uid="uid://54ghgw5u8vxu" path="res://Sprites/Bloody_Pit.png" id="1_hcvcy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuffm"]
+size = Vector2(324, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+shape = SubResource("RectangleShape2D_xuffm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(81, -17.025)
+texture = ExtResource("1_hcvcy")

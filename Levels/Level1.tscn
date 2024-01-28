@@ -1,11 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://bigr6ktrqcr17"]
+[gd_scene load_steps=13 format=3 uid="uid://bigr6ktrqcr17"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_akfke"]
 [ext_resource type="PackedScene" uid="uid://cebhgwj38jilj" path="res://Prefabs/Player.tscn" id="1_diinx"]
-[ext_resource type="PackedScene" uid="uid://87q8li4mp586" path="res://Utilities/audio_stream_player_2d.tscn" id="3_52ifx"]
+[ext_resource type="Script" path="res://Scripts/Conductor.gd" id="4_5yj1v"]
 [ext_resource type="Texture2D" uid="uid://eo47nsvpmlb2" path="res://Sprites/Lab_BG.png" id="5_477xp"]
 [ext_resource type="Script" path="res://Scripts/Ground.gd" id="5_dtgnt"]
 [ext_resource type="PackedScene" uid="uid://c8dwaw7826csi" path="res://Prefabs/Ground.tscn" id="5_fp3ql"]
+[ext_resource type="PackedScene" uid="uid://th53h4tvnoi7" path="res://Audio/Wwise.tscn" id="6_4gwuv"]
+[ext_resource type="PackedScene" uid="uid://e4r34d8vlhjp" path="res://Prefabs/PitCol.tscn" id="6_avkd2"]
+[ext_resource type="PackedScene" uid="uid://bvwoqtllifdmq" path="res://Prefabs/NetCol.tscn" id="7_eqtmo"]
+[ext_resource type="Texture2D" uid="uid://c43et5p7gncae" path="res://Sprites/Game_over_bluzorp.png" id="10_fftpj"]
+
+[sub_resource type="AudioStream" id="AudioStream_tjgsv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_etb3f"]
 size = Vector2(100, 20)
@@ -16,24 +22,84 @@ script = ExtResource("1_akfke")
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_diinx")]
 position = Vector2(314, 916.3)
 
-[node name="Conductor" parent="CharacterBody2D" instance=ExtResource("3_52ifx")]
+[node name="Timer" type="Timer" parent="CharacterBody2D"]
+
+[node name="Obstacles" type="Area2D" parent="."]
+
+[node name="Pit" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(3500, 1020)
+
+[node name="Pit2" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(7000, 1020)
+
+[node name="Pit3" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(9000, 1020)
+
+[node name="Pit4" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(5500, 1020)
+
+[node name="Pit5" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(11500, 1030)
+
+[node name="Pit6" parent="Obstacles" instance=ExtResource("6_avkd2")]
+position = Vector2(15000, 1030)
+
+[node name="Net1" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(963.703, 589.18)
+
+[node name="Net2" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(1600, 940)
+
+[node name="Net3" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(2500, 630)
+
+[node name="Net4" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(6000, 630)
+
+[node name="Net5" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(7800, 630)
+
+[node name="Net6" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(9700, 630)
+
+[node name="Net7" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(12300, 630)
+
+[node name="Net8" parent="Obstacles" instance=ExtResource("7_eqtmo")]
+position = Vector2(14200, 630)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
-[node name="HighGround" parent="." instance=ExtResource("5_fp3ql")]
-position = Vector2(314, 490)
+[node name="TextureRect" type="TextureRect" parent="Camera2D"]
+visible = false
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 974.0
+offset_bottom = 544.0
+texture = ExtResource("10_fftpj")
+
+[node name="Wwise" parent="." instance=ExtResource("6_4gwuv")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Wwise"]
+stream = SubResource("AudioStream_tjgsv")
+script = ExtResource("4_5yj1v")
+
+[node name="Grounds" type="Node2D" parent="."]
+
+[node name="HighGround" parent="Grounds" instance=ExtResource("5_fp3ql")]
+position = Vector2(315, 490)
 script = ExtResource("5_dtgnt")
 
-[node name="MiddleGround" parent="." instance=ExtResource("5_fp3ql")]
+[node name="MiddleGround" parent="Grounds" instance=ExtResource("5_fp3ql")]
 position = Vector2(314, 750)
 script = ExtResource("5_dtgnt")
 
-[node name="LowerGround" type="StaticBody2D" parent="."]
+[node name="LowerGround" type="StaticBody2D" parent="Grounds"]
 position = Vector2(315, 1040)
 script = ExtResource("5_dtgnt")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerGround"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grounds/LowerGround"]
 shape = SubResource("RectangleShape2D_etb3f")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -42,7 +108,10 @@ shape = SubResource("RectangleShape2D_etb3f")
 motion_mirroring = Vector2(11062, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(2, 0)
 scale = Vector2(1.513, 1.513)
 texture = ExtResource("5_477xp")
 centered = false
+
+[connection signal="trip" from="CharacterBody2D" to="Wwise" method="_on_character_body_2d_trip"]
+[connection signal="trip" from="CharacterBody2D" to="Wwise/AudioStreamPlayer2D" method="_on_character_body_2d_trip"]
+[connection signal="body_entered" from="Obstacles" to="CharacterBody2D" method="_on_obstacles_body_entered"]

@@ -1,0 +1,81 @@
+Event	ID	Name			Wwise Object Path	Notes
+	779278001	death			\Default Work Unit\death	
+	1247226118	music_100			\Default Work Unit\music_100	
+	1872774035	music_60			\Default Work Unit\music_60	
+	1906329337	music_40			\Default Work Unit\music_40	
+	1939884511	music_20			\Default Work Unit\music_20	
+	2107660701	music_80			\Default Work Unit\music_80	
+	2870727398	short_scratch			\Default Work Unit\short_scratch	
+	3120740864	trip			\Default Work Unit\trip	
+	3339779366	music_playlist_80			\Default Work Unit\music_playlist_80	
+	3440445112	music_playlist_20			\Default Work Unit\music_playlist_20	
+	3507555556	music_playlist_60			\Default Work Unit\music_playlist_60	
+	3541110730	music_playlist_40			\Default Work Unit\music_playlist_40	
+	3605772915	playlist			\Default Work Unit\playlist	
+	4141430720	cheer			\Default Work Unit\cheer	
+	4225041107	music_playlist_100			\Default Work Unit\music_playlist_100	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1777373219	Excitement			\Default Work Unit\Excitement	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18349185	death_9	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_9		841644
+	32655804	death_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_6		420872
+	33222424	c_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_6_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_60_playlist\c_6\c_6		1131368
+	83243305	c_7	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_7_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_60_playlist\c_7\c_7		1131368
+	145383975	e_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_5_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_5\e_5		445744
+	151899531	a_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_4_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_100\a_4		769844
+	152407807	b_8	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_8_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_8		651400
+	156035845	b_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_5_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_5		651400
+	184742945	e_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_3_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_3\e_3		445744
+	187144265	b_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_2		651400
+	242891642	b_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_4_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_4		651400
+	260879607	a_10	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_10_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_10\a_10		1539588
+	303767545	a_8	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_8_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_8\a_8		1539588
+	325002576	b_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_3		651400
+	355710373	b_7	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_7_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_7		651400
+	371662265	short_scratch_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_6_A5ED04AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_6		48208
+	384653986	Crowd,Med,TBT,Cheers 3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\Crowd,Med,TBT,Cheers 3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\crowd_cheer\Crowd,Med,TBT,Cheers 3		6107232
+	384774360	a_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_6_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_6\a_6		1539588
+	402736952	e_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_4_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_4\e_4		445744
+	459050151	c_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_5_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_60\c_5		566884
+	466897766	d_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\d_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_40\d_1		500236
+	474590254	d_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\d_3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_40\d_3		500236
+	487312220	death_7	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_7		420872
+	487689014	c_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_4_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_60\c_4		566884
+	509533566	Crowd,Med,Cheers,Claps 3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\Crowd,Med,Cheers,Claps 3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\crowd_cheer\Crowd,Med,Cheers,Claps 3		1970272
+	516313872	e_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_1_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_1\e_1		445744
+	521023427	death_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\trip\death_1		100408
+	524069375	a_7	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_7_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_7\a_7		1539588
+	543258062	Crowd,Med,TBT,Cheers 2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\Crowd,Med,TBT,Cheers 2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\crowd_cheer\Crowd,Med,TBT,Cheers 2		3737696
+	577863765	short_scratch_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_2_6D68B99D.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_2		48208
+	649737975	d_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\d_5_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_40\d_5		500236
+	693251651	c_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_60\c_1		566884
+	703303795	short_scratch_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_3_72CC3063.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_3		48208
+	710771731	death_8	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_8		841644
+	715659982	c_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_60\c_3		566884
+	761648964	b_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_1		651400
+	771305562	death_11	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_11		841644
+	796605674	a_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_100\a_1		769844
+	808903734	death_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\trip\death_2		264696
+	814489534	a_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_100\a_2		769844
+	827537551	e_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_6_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_6\e_6		445744
+	835192686	a_11	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_11_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_11\a_11		1539588
+	841976175	b_6	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\b_6_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_80\b_6		651400
+	866120164	a_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_5_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_5\a_5		769844
+	869691558	death_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\trip\death_3		352896
+	873339971	e_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\e_2_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_20_playlist\e_2\e_2		445744
+	875131115	death_10	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\death\death_10		841644
+	882955169	short_scratch_7	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_7_4BBA5A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_7		24940
+	885972815	short_scratch_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_5_CCCE44B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_5		48208
+	895985319	short_scratch_1	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_1_9305BA6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_1		48208
+	896976326	c_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\c_2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_60\c_2		566884
+	905977281	short_scratch_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\short_scratch_4_F00A61A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\short_scratch\short_scratch_4		48208
+	961866400	d_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\d_4_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_40\d_4		500236
+	994008059	death_5	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\trip\death_5		202368
+	1000752222	a_3	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_3_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_100\a_3		769844
+	1007988450	death_4	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\death_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\trip\death_4		319824
+	1008449604	d_2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\d_2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\health_40\d_2		500236
+	1011255524	a_9	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\a_9_FBC78EF0.wem		\Interactive Music Hierarchy\Music\health_100_playlist\a_9\a_9		1539588
+	1061700576	Crowd,Med,Cheers,Claps 2	D:\Games\Game Developing\Godot\Dito\Godot_test\.cache\Windows\SFX\Crowd,Med,Cheers,Claps 2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\crowd_cheer\Crowd,Med,Cheers,Claps 2		2234464
+

@@ -3,7 +3,7 @@
 
 extends AudioStreamPlayer2D
 
-var bpm = Global.bpm
+var bpm = Global.bpm[0]
 var measures = 4
 
 # Tracking the beat data and song position
@@ -27,7 +27,7 @@ func _physics_process(_delta):
 	if playing:
 		audio_update()
 	if not playing:
-		play()
+		#play()
 		audio_update()
 
 func audio_update():
@@ -144,3 +144,14 @@ func _on_start_timer_timeout():
 	
 	# Regardless the condition, update the beat report
 	_report_beat()
+	
+func _on_character_body_2d_trip():
+	if Global.health <= 80:
+		bpm = Global.bpm[1]
+	if Global.health <= 60:
+		bpm = Global.bpm[2]
+	if Global.health <= 40:
+		bpm = Global.bpm[3]
+	if Global.health <= 20:
+		bpm = Global.bpm[4]
+

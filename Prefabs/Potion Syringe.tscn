@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4iujassorkyf"]
+
+[ext_resource type="Texture2D" uid="uid://culeko566aj78" path="res://Sprites/Syringe_Green_Posion.png" id="1_sqfwh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuffm"]
+size = Vector2(1024, 1024)
+
+[node name="PotionSyringe" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xuffm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqfwh")
