@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1dey6v2fy2rd"
+path="res://.godot/imported/b_8.wav-aac99adea2fa5377c38ab0b3c63f8f6f.sample"
+
+[deps]
+
+source_file="res://Audio/BGM/Music Playlist 80 HP/b_8.wav"
+dest_files=["res://.godot/imported/b_8.wav-aac99adea2fa5377c38ab0b3c63f8f6f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

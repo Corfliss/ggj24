@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duhucf4eibwwo"]
 
-[ext_resource type="PackedScene" uid="uid://e4r34d8vlhjp" path="res://Prefabs/PitCol.tscn" id="1_gfh66"]
+[ext_resource type="PackedScene" uid="uid://e4r34d8vlhjp" path="res://Prefabs/Obstacles/PitCol.tscn" id="1_gfh66"]
 
 [node name="Pit" type="Area2D"]
 

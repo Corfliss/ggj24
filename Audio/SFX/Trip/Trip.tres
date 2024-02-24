@@ -1,0 +1,20 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://dhupdnewg518s"]
+
+[ext_resource type="AudioStream" uid="uid://dghhbxsj5mu2i" path="res://Audio/SFX/Trip/death_1.wav" id="1_78les"]
+[ext_resource type="AudioStream" uid="uid://qjquojttfy5y" path="res://Audio/SFX/Trip/death_2.wav" id="2_p1hfi"]
+[ext_resource type="AudioStream" uid="uid://dm435v6snocdc" path="res://Audio/SFX/Trip/death_3.wav" id="3_q0bje"]
+[ext_resource type="AudioStream" uid="uid://dq55s3xjux3p7" path="res://Audio/SFX/Trip/death_4.wav" id="4_w3431"]
+[ext_resource type="AudioStream" uid="uid://bqiiepsl3oemi" path="res://Audio/SFX/Trip/death_5.wav" id="5_leia4"]
+
+[resource]
+streams_count = 5
+stream_0/stream = ExtResource("1_78les")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_p1hfi")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_q0bje")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_w3431")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_leia4")
+stream_4/weight = 1.0

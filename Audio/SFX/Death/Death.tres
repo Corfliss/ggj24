@@ -1,0 +1,23 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://118dnioplp2b"]
+
+[ext_resource type="AudioStream" uid="uid://cr3dch4hxaoh3" path="res://Audio/SFX/Death/death_6.wav" id="1_epm58"]
+[ext_resource type="AudioStream" uid="uid://cromav2vhcqgc" path="res://Audio/SFX/Death/death_7.wav" id="2_blsjx"]
+[ext_resource type="AudioStream" uid="uid://bimyru7qfvgpt" path="res://Audio/SFX/Death/death_8.wav" id="3_liuxm"]
+[ext_resource type="AudioStream" uid="uid://5bcdggdaxwpf" path="res://Audio/SFX/Death/death_9.wav" id="4_5g5s3"]
+[ext_resource type="AudioStream" uid="uid://cxjd7y1qdlp5s" path="res://Audio/SFX/Death/death_10.wav" id="5_r7s3p"]
+[ext_resource type="AudioStream" uid="uid://5lctg2mj15xq" path="res://Audio/SFX/Death/death_11.wav" id="6_qwsfl"]
+
+[resource]
+streams_count = 6
+stream_0/stream = ExtResource("1_epm58")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_blsjx")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_liuxm")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_5g5s3")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_r7s3p")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("6_qwsfl")
+stream_5/weight = 1.0

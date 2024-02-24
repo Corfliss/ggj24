@@ -1,0 +1,2 @@
+https://gamedev.stackexchange.com/questions/207104/how-to-assign-a-resource-array-to-a-variable-in-godot-4
+https://github.com/LegionGames/Conductor-Example/blob/master/Scripts/Conductor.gd

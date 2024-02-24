@@ -1,0 +1,20 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://ch8iqoen10501"]
+
+[ext_resource type="AudioStream" uid="uid://b3wwqeiocoma0" path="res://Audio/BGM/Music Playlist 40 HP/d_1.wav" id="1_0p6k6"]
+[ext_resource type="AudioStream" uid="uid://k377ijh3bq4b" path="res://Audio/BGM/Music Playlist 40 HP/d_2.wav" id="2_18tg0"]
+[ext_resource type="AudioStream" uid="uid://fxbm2377l4ns" path="res://Audio/BGM/Music Playlist 40 HP/d_3.wav" id="3_41emh"]
+[ext_resource type="AudioStream" uid="uid://wepxx5jr2sgg" path="res://Audio/BGM/Music Playlist 40 HP/d_4.wav" id="4_0l5ka"]
+[ext_resource type="AudioStream" uid="uid://behwt3e4ra71f" path="res://Audio/BGM/Music Playlist 40 HP/d_5.wav" id="5_br05q"]
+
+[resource]
+streams_count = 5
+stream_0/stream = ExtResource("1_0p6k6")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_18tg0")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_41emh")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("4_0l5ka")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("5_br05q")
+stream_4/weight = 1.0

@@ -3,10 +3,8 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 #@onready var conductor = $Conductor
 @onready var camera = $"../Camera2D"
-@onready var timer = $Timer
 
 var is_jumping = false
-var first_press = true
 
 const SPEED = 750.0
 const JUMP_VELOCITY = 800.0
@@ -20,7 +18,6 @@ signal trip()
 func _ready():
 	# Set velocity based on input
 	velocity.x = SPEED
-	timer.start(0.5)
 
 func _process(delta):
 	# Set the camera position
@@ -35,14 +32,14 @@ func _process(delta):
 	if !is_on_floor():
 		velocity.y += gravity * delta
 
-	if Input.is_action_just_pressed("ui_accept") and first_press:
-		#timer.wait_time = 50
-		#timer.start()
-		#print("Timer start")
-		first_press = false
-	
-	if Input.is_action_just_pressed("ui_accept") and !first_press:
-		pass
+	#if Input.is_action_just_pressed("ui_accept") and first_press:
+		##timer.wait_time = 50
+		##timer.start()
+		##print("Timer start")
+		#first_press = false
+	#
+	#if Input.is_action_just_pressed("ui_accept") and !first_press:
+		#pass
 		#timer.stop()
 		#timer.wait_time = 50
 		#timer.start()
@@ -82,10 +79,8 @@ func update_animations():
 			animated_sprite.play("trip")
 		else:
 			animated_sprite.play("jump")
-		
 
-
-func _on_obstacles_body_entered(body):
+func _on_obstacles_body_entered(_body):
 	Global.health -= 20
 	velocity.x = TRIP_SPEED
 	if is_on_floor:
@@ -96,4 +91,3 @@ func _on_obstacles_body_entered(body):
 func _on_animated_sprite_2d_animation_finished():
 	velocity.x = SPEED
 	update_animations()
-	

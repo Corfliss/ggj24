@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://djnv1hqh5m352"]
 
-[ext_resource type="PackedScene" uid="uid://bvwoqtllifdmq" path="res://Prefabs/NetCol.tscn" id="1_qnruj"]
+[ext_resource type="PackedScene" uid="uid://bvwoqtllifdmq" path="res://Prefabs/Obstacles/NetCol.tscn" id="1_qnruj"]
 
 [node name="Net" type="Area2D"]
 
